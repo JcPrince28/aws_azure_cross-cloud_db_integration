@@ -1,0 +1,92 @@
+# Azure & AWS Cross-Cloud Database Integration 🌐
+
+This project demonstrates how to integrate AWS and Azure using a **site-to-site VPN**. The goal was to connect an **AWS RDS MySQL database** and an **Azure MySQL database** through an **Azure App Service running phpMyAdmin**. The VPN enables secure cross-cloud communication, allowing phpMyAdmin to manage both databases.
+
+## 📌 Project Overview
+- **VPN Configuration**: Site-to-site VPN between **AWS VPC** and **Azure VNet**.
+- **Database Connectivity**: Azure App Service (with **VNet integration**) connects to:
+  - AWS **RDS MySQL** (via VPN)
+  - **Azure MySQL** (via Private Endpoint)
+- **Containerized phpMyAdmin**: Runs in **Azure App Service** to manage both databases.
+
+---
+
+## 🖼️ Network Diagram
+![Network Architecture](Azure_AWS_Cross-Cloud_Database_Integration_Network_Drawing.png)
+
+---
+
+## 🚀 Azure Infrastructure
+### Azure App Service & Container
+- **App Service running phpMyAdmin**
+- Connected to **Azure MySQL** via **Private Endpoint**  
+- Connected to **AWS RDS MySQL** via **VPN**
+
+![App Service](Phpmyadmin_AppService.png)
+![App Service Container](AppService_Container.png)
+
+### Azure Virtual Network (VNet)
+- Contains subnets for App Service, Private Endpoint, and VPN Gateway  
+- CIDR: *(shown in the screenshot below)*
+
+![Azure Virtual Network](Virtual_Network.png)
+
+### Azure VPN Gateway & Connection
+- **VPN Tunnel** to AWS (*Status: Connected*)  
+- Allows secure traffic between **Azure and AWS VPC**
+
+![Azure VPN Connection](Azure_Vpn_Connection.png)
+
+### Azure MySQL Database
+- **Private Endpoint created** for secure internal access
+- **Metrics Monitoring** for database performance
+
+![Azure MySQL Private Endpoint](Azure_Mysql_Private-endpoint_Nic.png)
+![Azure MySQL Metrics](Azure_Mysql_Metrics.png)
+
+---
+
+## ☁️ AWS Infrastructure
+### AWS VPN & RDS Configuration
+- **AWS Virtual Private Gateway (VGW)** connects to Azure
+- **AWS RDS MySQL** deployed in a **private subnet group**
+- **Elastic Network Interface (ENI)** for the RDS instance
+
+![AWS VPN Connection](Aws_Vpn_Connection.png)
+![RDS Subnet Group](Rds_SubnetGroup.png)
+![RDS ENI & Private IP](Rds_Eni_Ip.png)
+
+### AWS RDS MySQL Database
+- Database instance and name visible in RDS console
+
+![AWS RDS Database Name](Rds_Db_Name.png)
+
+---
+
+## 🖥️ phpMyAdmin Setup
+### phpMyAdmin Login & Connection
+- phpMyAdmin deployed as a **containerized app** in Azure
+- Provides access to **both databases** (AWS RDS & Azure MySQL)
+
+![phpMyAdmin Login Page](Phpmyadmin_Login_Page.png)
+![phpMyAdmin Connected to Azure MySQL](Phpmyadmin_Azure_Mysql.png)
+![phpMyAdmin Connected to AWS RDS](Phpmyadmin_Rds_Mysql.png)
+
+---
+
+## 📸 Screenshots
+*(All screenshots are stored in this repository and referenced above.)*
+
+---
+
+## 📂 Project Files
+
+This repository contains resources used to test the **phpMyAdmin container** in a cross-cloud setup between **AWS** and **Azure**. Below are the key files included:
+
+- **Dockerfile** - Used to build and run the **phpMyAdmin** container with the necessary configurations.
+- **README.md** - Project documentation, including architecture details and setup instructions.
+- **Screenshots** - Various images showcasing the **VPN setup, database connections, and infrastructure** across both cloud providers.
+
+---
+
+**Project completed! ✅**
