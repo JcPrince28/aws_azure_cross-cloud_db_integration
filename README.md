@@ -1,7 +1,7 @@
 # Azure & AWS Cross-Cloud Database Integration (Lab Project) 🌐
 
 ## Overview
-This lab project explores **cross-cloud networking** by integrating **AWS RDS MySQL** and **Azure MySQL** via a **site-to-site VPN**. A **containerized phpMyAdmin instance** running on **Azure App Service** provided unified database management across both platforms.
+This lab project explores **cross-cloud networking** by integrating **AWS RDS MySQL** and **Azure MySQL** via a **site-to-site VPN** to a **containerized phpMyAdmin instance** running on **Azure App Service** providing unified database management across both public cloud platforms.
 
 ## 📌 Project Details
 To **test and apply cloud networking concepts**, I set up a **site-to-site VPN** between AWS and Azure, enabling secure cross-cloud database communication. The project involved:
