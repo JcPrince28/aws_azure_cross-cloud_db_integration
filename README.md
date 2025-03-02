@@ -22,27 +22,27 @@ This project demonstrates how to integrate AWS and Azure using a **site-to-site 
 - Connected to **Azure MySQL** via **Private Endpoint**  
 - Connected to **AWS RDS MySQL** via **VPN**
 
-![App Service](Phpmyadmin_AppService.png)
-![App Service Container](AppService_Container.png)
+![App Service](project_screenshots/Phpmyadmin_AppService.png)
+![App Service Container](project_screenshots/AppService_Container.png)
 
 ### Azure Virtual Network (VNet)
 - Contains subnets for App Service, Private Endpoint, and VPN Gateway  
 - CIDR: *(shown in the screenshot below)*
 
-![Azure Virtual Network](Virtual_Network.png)
+![Azure Virtual Network](project_screenshots/Virtual_Network.png)
 
 ### Azure VPN Gateway & Connection
 - **VPN Tunnel** to AWS (*Status: Connected*)  
 - Allows secure traffic between **Azure and AWS VPC**
 
-![Azure VPN Connection](Azure_Vpn_Connection.png)
+![Azure VPN Connection](project_screenshots/Azure_Vpn_Connection.png)
 
 ### Azure MySQL Database
 - **Private Endpoint created** for secure internal access
 - **Metrics Monitoring** for database performance
 
-![Azure MySQL Private Endpoint](Azure_Mysql_Private-endpoint_Nic.png)
-![Azure MySQL Metrics](Azure_Mysql_Metrics.png)
+![Azure MySQL Private Endpoint](project_screenshots/Azure_Mysql_Private-endpoint_Nic.png)
+![Azure MySQL Metrics](project_screenshots/Azure_Mysql_Metrics.png)
 
 ---
 
@@ -52,14 +52,14 @@ This project demonstrates how to integrate AWS and Azure using a **site-to-site 
 - **AWS RDS MySQL** deployed in a **private subnet group**
 - **Elastic Network Interface (ENI)** for the RDS instance
 
-![AWS VPN Connection](Aws_Vpn_Connection.png)
-![RDS Subnet Group](Rds_SubnetGroup.png)
-![RDS ENI & Private IP](Rds_Eni_Ip.png)
+![AWS VPN Connection](project_screenshots/Aws_Vpn_Connection.png)
+![RDS Subnet Group](project_screenshots/Rds_SubnetGroup.png)
+![RDS ENI & Private IP](project_screenshots/Rds_Eni_Ip.png)
 
 ### AWS RDS MySQL Database
 - Database instance and name visible in RDS console
 
-![AWS RDS Database Name](Rds_Db_Name.png)
+![AWS RDS Database Name](project_screenshots/Rds_Db_Name.png)
 
 ---
 
@@ -68,14 +68,14 @@ This project demonstrates how to integrate AWS and Azure using a **site-to-site 
 - phpMyAdmin deployed as a **containerized app** in Azure
 - Provides access to **both databases** (AWS RDS & Azure MySQL)
 
-![phpMyAdmin Login Page](Phpmyadmin_Login_Page.png)
-![phpMyAdmin Connected to Azure MySQL](Phpmyadmin_Azure_Mysql.png)
-![phpMyAdmin Connected to AWS RDS](Phpmyadmin_Rds_Mysql.png)
+![phpMyAdmin Login Page](project_screenshots/Phpmyadmin_Login_Page.png)
+![phpMyAdmin Connected to Azure MySQL](project_screenshots/Phpmyadmin_Azure_Mysql.png)
+![phpMyAdmin Connected to AWS RDS](project_screenshots/Phpmyadmin_Rds_Mysql.png)
 
 ---
 
 ## 📸 Screenshots
-*(All screenshots are stored in this repository and referenced above.)*
+*(All screenshots are stored in this repository in the project_screenshots directory.)*
 
 ---
 
