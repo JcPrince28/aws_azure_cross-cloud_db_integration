@@ -1,17 +1,20 @@
-# Azure & AWS Cross-Cloud Database Integration 🌐
+# Azure & AWS Cross-Cloud Database Integration (Lab Project) 🌐
 
-This project demonstrates how to integrate AWS and Azure using a **site-to-site VPN**. The goal was to connect an **AWS RDS MySQL database** and an **Azure MySQL database** through an **Azure App Service running phpMyAdmin**. The VPN enables secure cross-cloud communication, allowing phpMyAdmin to manage both databases.
+This lab project demonstrates how to integrate AWS and Azure using a **site-to-site VPN**. The goal was to connect an **AWS RDS MySQL database** and an **Azure MySQL database** through an **Azure App Service running phpMyAdmin**. The VPN enables secure cross-cloud communication, allowing phpMyAdmin to manage both databases.
 
 ## 📌 Project Overview
-- **VPN Configuration**: Site-to-site VPN between **AWS VPC** and **Azure VNet**.
-- **Database Connectivity**: Azure App Service (with **VNet integration**) connects to:
-  - AWS **RDS MySQL** (via VPN)
-  - **Azure MySQL** (via Private Endpoint)
-- **Containerized phpMyAdmin**: Runs in **Azure App Service** to manage both databases.
+This lab project was created to **test and apply cloud networking concepts** by integrating AWS and Azure using a **site-to-site VPN**. The goal was to enable secure cross-cloud database communication between an **AWS RDS MySQL instance** and an **Azure MySQL database**, accessible via a **containerized phpMyAdmin instance running on Azure App Service**.
+
+This project allowed me to experiment with:
+- **Site-to-site VPN setup** between AWS and Azure
+- **Private networking and service integration** (Azure Private Endpoint, AWS RDS subnet groups)
+- **Containerized application deployment** using Azure App Service
+
+💡 *Since this was a lab project, all resources were temporary and have been decommissioned.*
 
 ---
 
-## 🖼️ Network Diagram
+## 🖼️ Network Architecture Diagram
 ![Network Architecture](Azure_AWS_Cross-Cloud_Database_Integration_Network_Drawing.png)
 
 ---
