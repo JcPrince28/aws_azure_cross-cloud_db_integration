@@ -11,21 +11,21 @@ To **test and apply cloud networking concepts**, I set up a **site-to-site VPN**
 - **Deploying phpMyAdmin in a container** on Azure App Service for database access
 
 ## 🛠️ Technologies Used
-- **AWS:** RDS MySQL, VPN Gateway, Subnet Groups
+- **AWS:** RDS MySQL, VPN Gateway, Subnet Groups, Security Groups
 - **Azure:** MySQL Database, App Service, Private Endpoint, Virtual Network Gateway
-- **Networking:** Site-to-Site VPN, Secure VNet Peering
+- **Networking:** Site-to-Site VPN, VNET Integration, Routing
 - **Containerization:** Dockerized phpMyAdmin on Azure App Service
 
 ## 🔍 Key Learnings
-- Establishing **secure cloud-to-cloud communication** using VPNs
+- Establishing **secure cloud-to-cloud communication** using Site-to-Site VPNs
 - Configuring **private networking** for managed database services
 - Deploying **containerized applications** on Azure App Service
 
 ## ⚠️ Decommissioning
 💡 *Since this was a lab project, all resources have been decommissioned.*
 
-## 📜 License
-This project is for educational purposes only.
+## 📝 Purpose & Scope
+This project was for educational purposes only.
 
 ---
 
