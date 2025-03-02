@@ -44,8 +44,7 @@ This project was for educational purposes only.
 ![App Service Container](project_screenshots/AppService_Container.png)
 
 ### Azure Virtual Network (VNet)
-- Contains subnets for App Service, Private Endpoint, and VPN Gateway  
-- CIDR: *(shown in the screenshot below)*
+- Contains subnets for App Service, Private Endpoint, and VPN Gateway
 
 ![Azure Virtual Network](project_screenshots/Virtual_Network.png)
 
