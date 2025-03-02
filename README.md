@@ -38,7 +38,7 @@ This project was for educational purposes only.
 ### Azure App Service & Container
 - **App Service running phpMyAdmin**
 - Connected to **Azure MySQL** via **Private Endpoint**  
-- Connected to **AWS RDS MySQL** via **VPN** (172.31.251.236)
+- Established a connection to **AWS RDS MySQL** (172.31.251.236) from the **App Service** KuduLite container via **VPN**, using telnet over TCP port 3306.
 
 ![App Service](project_screenshots/Phpmyadmin_AppService.png)
 ![App Service Container](project_screenshots/AppService_Container.png)
