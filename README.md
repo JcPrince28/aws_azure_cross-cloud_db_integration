@@ -1,16 +1,31 @@
 # Azure & AWS Cross-Cloud Database Integration (Lab Project) 🌐
 
-This lab project demonstrates how to integrate AWS and Azure using a **site-to-site VPN**. The goal was to connect an **AWS RDS MySQL database** and an **Azure MySQL database** through an **Azure App Service running phpMyAdmin**. The VPN enables secure cross-cloud communication, allowing phpMyAdmin to manage both databases.
+## Overview
+This lab project explores **cross-cloud networking** by integrating **AWS RDS MySQL** and **Azure MySQL** via a **site-to-site VPN**. A **containerized phpMyAdmin instance** running on **Azure App Service** provided unified database management across both platforms.
 
-## 📌 Project Overview
-This lab project was created to **test and apply cloud networking concepts** by integrating AWS and Azure using a **site-to-site VPN**. The goal was to enable secure cross-cloud database communication between an **AWS RDS MySQL instance** and an **Azure MySQL database**, accessible via a **containerized phpMyAdmin instance running on Azure App Service**.
+## 📌 Project Details
+To **test and apply cloud networking concepts**, I set up a **site-to-site VPN** between AWS and Azure, enabling secure cross-cloud database communication. The project involved:
 
-This project allowed me to experiment with:
-- **Site-to-site VPN setup** between AWS and Azure
-- **Private networking and service integration** (Azure Private Endpoint, AWS RDS subnet groups)
-- **Containerized application deployment** using Azure App Service
+- **Configuring VPN connectivity** between AWS and Azure
+- **Integrating private networking** (Azure Private Endpoint, AWS RDS subnet groups)
+- **Deploying phpMyAdmin in a container** on Azure App Service for database access
 
-💡 *Since this was a lab project, all resources were temporary and have been decommissioned.*
+## 🛠️ Technologies Used
+- **AWS:** RDS MySQL, VPN Gateway, Subnet Groups
+- **Azure:** MySQL Database, App Service, Private Endpoint, Virtual Network Gateway
+- **Networking:** Site-to-Site VPN, Secure VNet Peering
+- **Containerization:** Dockerized phpMyAdmin on Azure App Service
+
+## 🔍 Key Learnings
+- Establishing **secure cloud-to-cloud communication** using VPNs
+- Configuring **private networking** for managed database services
+- Deploying **containerized applications** on Azure App Service
+
+## ⚠️ Decommissioning
+💡 *Since this was a lab project, all resources have been decommissioned.*
+
+## 📜 License
+This project is for educational purposes only.
 
 ---
 
